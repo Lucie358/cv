@@ -1,0 +1,35 @@
+body.dark .formation h3 {
+  background-color: #466b71;
+}
+
+body.dark .content-formation {
+  background: white;
+}
+
+body.dark .tab-content {
+  background-color: #585858;
+  padding: 30px;
+  color: white;
+  border-radius: 13px;
+}
+body.dark .infos { 
+    background-color: #494343;
+    color:white;
+    
+}
+
+
+body.dark main {
+  background-color: #303030;
+}
+
+@media screen and (max-width: 768px) {
+  body.dark .infos_text {
+    background-color: #404040;
+  }
+
+  body.dark .infos_content h1 {
+    background-color: #303030;
+    color: white;
+  }
+}
