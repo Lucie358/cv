@@ -93,11 +93,13 @@
 
 /* The actual content */
 .tml-content {
-  padding: 20px 30px;
+  padding: 20px 28px;
   background-image: linear-gradient(135deg, #4f5dff 0%, #7b4a96c4 100%);
   position: relative;
   border-radius: 6px;
-  color:white;
+  color: white;
+  hyphens: auto;
+  min-width: 242px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -110,8 +112,7 @@
   /* Full-width containers */
   .tml-container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 51px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
@@ -119,7 +120,7 @@
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #ffffff6b transparent transparent;
+    border-color: transparent #ffffff00 transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
