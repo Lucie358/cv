@@ -143,7 +143,7 @@ main > section > article:first-of-type {
   background-image: url(../image/bg-container.png);
   background-size: cover;
   line-height: 1.9em;
-  padding: 76px 10%;
+  padding: 60px 10%;
   color: #757575;
   text-align: center;
 }
