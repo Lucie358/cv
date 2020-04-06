@@ -7,6 +7,7 @@ var app = {
   initLightbox() {
     $(".lightbox img").click(function () {
       var $body = $("body");
+      $body.addClass("overflow-hidden");
       var $imgHref = $(this).attr("src");
       var $lightbox = $('<div id="lightbox">');
       var $lightboxImage = $("<img>").attr("src", $imgHref);

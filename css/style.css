@@ -28,6 +28,10 @@ article > h2 {
   text-align: center;
 }
 
+.fixed-top {
+  z-index: 900 !important;
+}
+
 .navbar-toggler {
   border: none;
 }
