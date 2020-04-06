@@ -29,7 +29,9 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        
+
         <button
           class="navbar-toggler"
           type="button"
@@ -41,7 +43,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <button  onclick="app.toggleTheme(this)" class="navbar-brand dark-btn " href="#"><img src="image/moon.svg" alt="dark mode"></button>
+        <button onclick="app.toggleTheme(this)" class="light-btn" href="#"><img src="image/sun.svg" alt="light mode"></button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -58,13 +62,16 @@
             </li>
           </ul>
         </div>
+      
       </nav>
       <article class="infos">
         <div>
-          <img src="image/pic.jpg" alt="Photo de Lucie Brochet" />
+          <div>
+            <img src="image/pic.jpg" alt="Photo de Lucie Brochet" />
+          </div>
           <div class="infos_content">
             <h1>Bonjour ! Je suis Lucie</h1>
-            <h4>Etudiante à l'IUT de Lannion au sein du DU Web</h4>
+            <h4>Etudiante à l'IUT de Lannion - DU Web</h4>
             <p>
               <img src="image/home.svg" alt="" />Adresse: 1 Allée du palais de
               justice, 22300 Lannion
@@ -91,21 +98,27 @@
 
     <main>
       <section>
-        <article class="about">
+        <article>
           <h2>A propos</h2>
           <p>
             Je m'appelle Lucie Brochet et je suis actuellement étudiante à l'IUT
-            de Lannion au sein de la formation DU Web. Passionnée par
+            de Lannion au sein de la formation DU Web. <br>Passionnée par
             l'informatique, je me suis tournée vers le développement en 2019
             avec une première formation de 6 mois qui a débouché sur un Titre
-            Professionnel. Aujourd'hui, je suis à la recherche d'une entreprise
-            en Bretagne pour un stage de juin à fin août rémunéré par la Région
+            Professionnel.
+          </p>
+          <p>
+            Aujourd'hui, je suis à la recherche d'une entreprise en Bretagne
+            pour
+            <strong>un stage de juin à fin août</strong> rémunéré par la Région
             afin de valider ma formation et poursuivre les études en licence
             professionnelle en septembre 2020, en alternance.
           </p>
-          <a href="image/cv.pdf"> <img src="image/files-and-folders.svg" alt=""> Consulter le CV</a>
+          <a href="image/cv.pdf">
+            <img src="image/files-and-folders.svg" alt="" /> Consulter le CV</a
+          >
         </article>
-        <article class="formations">
+        <article>
           <h2>
             Formations
           </h2>
@@ -153,48 +166,48 @@
             </div>
           </div>
         </article>
-        <article class="competences">
+        <article>
           <h2>Compétences</h2>
-          <div class="content-competences">
+          <div>
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/html.png"
               alt="Logo HTML"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/css.png"
               alt="Logo CSS"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/php.svg.png"
               alt="Logo PHP"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/symfony.png"
               alt="Logo Symfony"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/js.png"
               alt="Logo JS"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/postgre.png"
               alt="Logo postgre"
             />
             <img
-              class="img-fluid logo-competences"
+              class="img-fluid"
               src="image/opquast.png"
               alt="Logo opquast"
             />
           </div>
         </article>
 
-        <article class="projects">
+        <article>
           <h2>Projets réalisés</h2>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -231,7 +244,7 @@
               >
             </li>
           </ul>
-          <div class="content">
+          <div>
             <div class="tab-content" id="myTabContent">
               <div
                 id="item-1"
