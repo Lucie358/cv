@@ -30,8 +30,6 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-        
-
         <button
           class="navbar-toggler"
           type="button"
@@ -40,12 +38,25 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          data-target=".in"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <button  onclick="app.toggleTheme(this)" class="navbar-brand dark-btn " href="#"><img src="image/moon.svg" alt="dark mode"></button>
-        <button onclick="app.toggleTheme(this)" class="navbar-brand light-btn" href="#"><img src="image/sun.svg" alt="light mode"></button>
-        
+        <button
+          onclick="app.toggleTheme(this)"
+          class="navbar-brand dark-btn"
+          href="#"
+        >
+          <img src="image/moon.svg" alt="dark mode" />
+        </button>
+        <button
+          onclick="app.toggleTheme(this)"
+          class="navbar-brand light-btn"
+          href="#"
+        >
+          <img src="image/sun.svg" alt="light mode" />
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -60,10 +71,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projets réalisés</a>
             </li>
-           
           </ul>
         </div>
-      
       </nav>
       <article class="infos">
         <div>
@@ -89,8 +98,12 @@
               mai 1997
             </p>
             <div class="reseaux">
-              <a href="https://www.linkedin.com/in/lucie-brochet/"><img src="image/linkedin.svg"/></a>
-              <a href="https://github.com/Lucie358"> <img src="image/github.svg" /></a>
+              <a href="https://www.linkedin.com/in/lucie-brochet/"
+                ><img src="image/linkedin.svg"
+              /></a>
+              <a href="https://github.com/Lucie358">
+                <img src="image/github.svg"
+              /></a>
             </div>
           </div>
         </div>
@@ -103,10 +116,10 @@
           <h2>A propos</h2>
           <p>
             Je m'appelle Lucie Brochet et je suis actuellement étudiante à l'IUT
-            de Lannion au sein de la formation DU Web. <br>Passionnée par
-            l'informatique, je me suis tournée vers le développement en 2019
-            avec une première formation de 6 mois qui a débouché sur un Titre
-            Professionnel.
+            de Lannion au sein de la formation DU Web. <br />
+            Passionnée par l'informatique, je me suis tournée vers le
+            développement en 2019 avec une première formation de 6 mois qui a
+            débouché sur un Titre Professionnel.
           </p>
           <p>
             Aujourd'hui, je suis à la recherche d'une entreprise en Bretagne
@@ -120,7 +133,7 @@
           >
         </article>
         <article id="formations">
-          <h2 >
+          <h2>
             Formations
           </h2>
           <div class="timeline">
@@ -168,39 +181,15 @@
           </div>
         </article>
         <article id="competences">
-          <h2 >Compétences</h2>
+          <h2>Compétences</h2>
           <div>
-            <img
-              class="img-fluid"
-              src="image/html.png"
-              alt="Logo HTML"
-            />
-            <img
-              class="img-fluid"
-              src="image/css.png"
-              alt="Logo CSS"
-            />
-            <img
-              class="img-fluid"
-              src="image/php.svg.png"
-              alt="Logo PHP"
-            />
-            <img
-              class="img-fluid"
-              src="image/symfony.png"
-              alt="Logo Symfony"
-            />
-            <img
-              class="img-fluid"
-              src="image/js.png"
-              alt="Logo JS"
-            />
-           
-            <img
-              class="img-fluid"
-              src="image/opquast.png"
-              alt="Logo opquast"
-            />
+            <img class="img-fluid" src="image/html.png" alt="Logo HTML" />
+            <img class="img-fluid" src="image/css.png" alt="Logo CSS" />
+            <img class="img-fluid" src="image/php.svg.png" alt="Logo PHP" />
+            <img class="img-fluid" src="image/symfony.png" alt="Logo Symfony" />
+            <img class="img-fluid" src="image/js.png" alt="Logo JS" />
+
+            <img class="img-fluid" src="image/opquast.png" alt="Logo opquast" />
           </div>
         </article>
 
@@ -256,10 +245,10 @@
                   quelqu'un pour écrire une histoire par exemple, tandis que lui
                   dessinerait. Pour favoriser la mise en relation de ces
                   différents métiers, quelques fonctionnalités ont été mises en
-                  place comme une messagerie instatannée, la possibilité de se
+                  place comme une messagerie instantanée, la possibilité de se
                   connecter afin d'ajouter des annonces sur le site, un système
                   de recherche par tag ou métier des utilisateurs ou une
-                  "gallerie" sur son propre profil permettant d'ajouter ses
+                  "galerie" sur son propre profil permettant d'ajouter ses
                   travaux, visible par les autres utilisateurs.
                 </p>
                 <p>
@@ -268,7 +257,8 @@
                   présenter à mon Titre Professionnel en janvier 2020.
                 </p>
                 <p class="techno">
-                  Technologies utilisées: Symfony 4, Mercure, Ajax, Javascript, MDBootstrap
+                  Technologies utilisées: Symfony 4, Mercure, Ajax, Javascript,
+                  MDBootstrap
                 </p>
                 <div class="text-center lightbox">
                   <img
@@ -293,12 +283,12 @@
                   Le Berceau du rat est un projet personnel, réalisé en
                   autonomie et toujours en cours. L'objectif de ce site est de
                   pouvoir répertorier au sein d'un même endroit les rats
-                  domestiques. Le but étant de refaire entièrement, sous Symfony
-                  5 cette fois, le site "Le livre des origines du rat
+                  domestiques. Le but étant de refaire entièrement, sous
+                  Symfony5 cette fois, le site "Le livre des origines du rat
                   domestique" aka LORD, qui a vieilli même s'il fonctionne
                   toujours et est d'ailleurs encore très très utilisé par la
-                  communauté.Ce site permets donc d'enregistrer des rats et des
-                  portées, mais égalements des "rateries" (Personnes qui
+                  communauté. Ce site permets donc d'enregistrer des rats et des
+                  portées, mais également des "rateries" (Personnes qui
                   reproduisent des rats). Ainsi, on peut obtenir l'arbre
                   généalogique d'un rat, remplir sa courbe de poids, savoir les
                   particularités de sa famille par exemple niveau santé ou
@@ -334,13 +324,13 @@
                 <p>
                   Durant cet exercice réalisé durant ma formation à O'Clock,
                   nous avions comme consigne de réaliser un Pokedex (une sorte
-                  de dictionnaire de créatures Pokemon) afin d'appronfondir le
-                  modèle MVC, MySQL et PHP.La base de données des pokemons était
-                  déjà fournies avec leur nom, type etc... L'application se
+                  de dictionnaire de créatures Pokemon) afin d'approfondir le
+                  modèle MVC, MySQL et PHP. La base de données des pokemons
+                  était déjà fournis avec leur nom, type etc... L'application se
                   compose donc de la page d'accueil avec chaque pokemon qui est
-                  cliquable et ramène sur sa fiche personnel avec les
+                  cliquable et ramène sur sa fiche personnelle avec les
                   informations qui lui appartiennent (type, nombre de point de
-                  vie etc et une barre de statistique associée). En haut du
+                  vie etc. et une barre de statistique associée). En haut du
                   site, nous pouvons revenir sur l'accueil en cliquant sur
                   liste, ou voir tous les types de pokemons
                 </p>

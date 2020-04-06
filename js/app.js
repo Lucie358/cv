@@ -1,6 +1,7 @@
 var app = {
   init() {
     app.initLightbox();
+    app.initNavbarAutoCollapse();
   },
 
   initLightbox() {
@@ -31,27 +32,30 @@ var app = {
       app.switchToDark();
     } else {
       app.switchToLight();
-
     }
   },
 
   switchToDark(el) {
-   
     var navbar = $("nav");
     navbar.removeClass("navbar-light");
     navbar.addClass("navbar-dark bg-dark");
-
   },
 
   switchToLight(el) {
     var navbar = $("nav");
     navbar.removeClass("navbar-dark bg-dark");
     navbar.addClass("navbar-light bg-light");
-
-
   },
+
+  initNavbarAutoCollapse(){
+    $(".navbar-collapse a").click(function () {
+      $(".navbar-collapse").collapse("hide");
+    });
+  
+  }
 };
 
 $(document).ready(function () {
+
   app.init();
 });
