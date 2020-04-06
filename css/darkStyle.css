@@ -13,6 +13,9 @@ body.dark main > section > article:first-of-type {
 
   color: #c7c7c7;
 }
+body.dark .navbar {
+  background-color: #303030;
+}
 
 body.dark header > article > div:first-of-type {
   background-color: #424242;
