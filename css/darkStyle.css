@@ -26,13 +26,23 @@ body.dark main > section > article:nth-of-type(2) {
 }
 
 body.dark .tml-container::after {
-  border: 4px solid #a390c2;;
+  border: 4px solid #a390c2;
 }
 body.dark .nav-tabs .nav-link:after {
   border-bottom: 3px solid #424242;
-
 }
 
 body.dark header > article > div {
   box-shadow: 0 0 10px #00000021;
+}
+body.dark header > article > div div:nth-of-type(2) p > img {
+  filter: saturate(0.3);
+}
+
+body.dark .reseaux img {
+  filter: invert(0.7);
+}
+
+body.dark main > section > article:first-of-type img {
+  filter: saturate(0.3);
 }
