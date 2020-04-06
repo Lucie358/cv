@@ -235,6 +235,8 @@ main > section > article:nth-of-type(4) > div:first-of-type {
   margin: auto;
   margin-top: 20px;
   width: 40px;
+  filter: opacity(0.5);
+  
 }
 
 .techno {

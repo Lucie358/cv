@@ -39,7 +39,7 @@ body.dark header > article > div div:nth-of-type(2) p > img {
   filter: saturate(0.3);
 }
 
-body.dark .reseaux img {
+body.dark .reseaux img, body.dark .github {
   filter: invert(0.7);
 }
 
