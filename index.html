@@ -250,24 +250,25 @@
               <a
                 class="nav-link active"
                 href="#item-1"
-                role="tab"
                 data-toggle="tab"
+                role="tab"
                 aria-selected="true"
                 aria-controls="item-1"
-                >O'Stan</a
+                >Le Berceau du Rat</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link "
                 href="#item-2"
-                data-toggle="tab"
                 role="tab"
+                data-toggle="tab"
                 aria-selected="false"
                 aria-controls="item-2"
-                >Le Berceau du Rat</a
+                >O'Stan</a
               >
             </li>
+            
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -282,10 +283,47 @@
           </ul>
           <div>
             <div class="tab-content" id="myTabContent">
+
+              <div id="item-1" class="tab-pane fade show active" aria-labelledby="item-1">
+                <h4>Le berceau du Rat</h4>
+                <p>
+                  Le Berceau du rat est un projet personnel, réalisé en
+                  autonomie et toujours en cours. L'objectif de ce site est de
+                  pouvoir répertorier au sein d'un même endroit les rats
+                  domestiques. Le but étant de refaire entièrement, sous
+                  Symfony5 cette fois, le site "Le livre des origines du rat
+                  domestique" aka LORD, qui a vieilli même s'il fonctionne
+                  toujours et est d'ailleurs encore très très utilisé par la
+                  communauté. Ce site permets donc d'enregistrer des rats et des
+                  portées, mais également des "rateries" (Personnes qui
+                  reproduisent des rats). Ainsi, on peut obtenir l'arbre
+                  généalogique d'un rat, remplir sa courbe de poids, savoir les
+                  particularités de sa famille par exemple niveau santé ou
+                  autre. Chaque enregistrement génère un numéro d'identification
+                  par rat unique. </br>D'abord débuté en Symfony 5 afin de découvrir les nouveautés de la nouvelle version, j'ai décidé de le recommencer entièrement en août 2020 pour le faire avec une REST API en Node.js (que je découvre avec MongoDB) et un front en Vue.js pour être plus à l'aise avec ce Framework
+                </p>
+                <p class="font-weight-bold mt-2">Plus de captures à venir, projet recommencé en août 2020.</p>
+                <p class="techno">
+                  Technologies utilisées: Node.js, Javascript, Vue.js, Vuetify, MongoDB
+                </p>
+                <div class="text-center lightbox">
+                  <img
+                    class="img-fluid projectpic"
+                    src="image/berceau.jpg"
+                    alt="Accueil du site Berceau du rat"
+                  />
+                 
+                </div>
+                <a href="https://github.com/Lucie358/berceauV2-front"
+                  ><img class="img-fluid github" src="image/github.svg"
+                /></a>
+              </div>
+
+
               <div
-                id="item-1"
-                class="tab-pane fade show active"
-                aria-labelledby="item-1"
+                id="item-2"
+                class="tab-pane fade "
+                aria-labelledby="item-2"
               >
                 <h4>O'Stan</h4>
                 <p>
@@ -327,48 +365,7 @@
                   ><img class="img-fluid github" src="image/github.svg"
                 /></a>
               </div>
-              <div id="item-2" class="tab-pane fade" aria-labelledby="item-2">
-                <h4>Le berceau du Rat</h4>
-                <p>
-                  Le Berceau du rat est un projet personnel, réalisé en
-                  autonomie et toujours en cours. L'objectif de ce site est de
-                  pouvoir répertorier au sein d'un même endroit les rats
-                  domestiques. Le but étant de refaire entièrement, sous
-                  Symfony5 cette fois, le site "Le livre des origines du rat
-                  domestique" aka LORD, qui a vieilli même s'il fonctionne
-                  toujours et est d'ailleurs encore très très utilisé par la
-                  communauté. Ce site permets donc d'enregistrer des rats et des
-                  portées, mais également des "rateries" (Personnes qui
-                  reproduisent des rats). Ainsi, on peut obtenir l'arbre
-                  généalogique d'un rat, remplir sa courbe de poids, savoir les
-                  particularités de sa famille par exemple niveau santé ou
-                  autre. Chaque enregistrement génère un numéro d'identification
-                  par rat unique.
-                </p>
-                <p class="techno">
-                  Technologies utilisées: Symfony 5, Javascript, Materialize
-                </p>
-                <div class="text-center lightbox">
-                  <img
-                    class="img-fluid projectpic"
-                    src="image/berceau.png"
-                    alt="Accueil du site Berceau du rat"
-                  />
-                  <img
-                    class="img-fluid projectpic"
-                    src="image/berceaurat.png"
-                    alt="Fiche d'un rat"
-                  />
-                  <img
-                    class="img-fluid projectpic"
-                    src="image/berceaurats.png"
-                    alt="Répertoire des rats"
-                  />
-                </div>
-                <a href="https://github.com/Lucie358/Le-berceau-du-rat"
-                  ><img class="img-fluid github" src="image/github.svg"
-                /></a>
-              </div>
+             
               <div id="item-3" class="tab-pane fade" aria-labelledby="item-3">
                 <h4>Pokedex</h4>
                 <p>
